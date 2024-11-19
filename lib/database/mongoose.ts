@@ -23,7 +23,10 @@ export const connectToDatabase = async () => {
  cached.promise = 
  cached.promise ||
  mongoose.connect 
-(MONGODB_URL, { dbName:'aiiep', bufferCommands: false})
+(MONGODB_URL, { dbName:'aiiep', bufferCommands: false}).catch((err) => {
+    console.error('MongoDB connection error:', err);
+    throw new Error('Failed to connect to MongoDB');
+  });
 
 cached.conn = await cached.promise;
 

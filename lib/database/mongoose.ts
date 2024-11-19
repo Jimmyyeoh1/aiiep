@@ -1,6 +1,6 @@
 import mongoose, { Mongoose } from 'mongoose';
 
-const MONGODB_URL='mongodb+srv://jameshelio:jimmyyeoh@cluster0.oloen.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const MONGODB_URL= process.env.MONGODB_URL;
 
 interface MongooseConnection {
   conn: Mongoose | null;
@@ -23,7 +23,7 @@ export const connectToDatabase = async () => {
   cached.promise = 
     cached.promise || 
     mongoose.connect(MONGODB_URL, { 
-      dbName: 'aiiep', bufferCommands: false 
+      dbName:'aiiep', bufferCommands: false 
     })
 
 

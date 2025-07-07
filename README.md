@@ -75,9 +75,10 @@ App will be live at aiiep.vercel.app
 📄 License
 
 This project is developed for academic purposes. Contact the developer for reuse or licensing.
+
 📬 Contact
 
-    Developer: Yeoh Khye Shyan
+    Developer: Jimmy Yeoh
 
     Email: yeohjim@gmail.com
 

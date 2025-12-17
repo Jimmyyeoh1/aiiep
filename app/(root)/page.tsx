@@ -13,7 +13,7 @@ const Home = async ({ searchParams }: SearchParamProps) => {
   return (
     <>
     <section className="home">
-    <h1 className="home-heading" style="font-size: 40px">
+    <h1 className="home-heading" style={{ fontSize: "40px" }}>
         AI Editing by Jimmy Yeoh
       </h1>
       <ul className="flex-center w-full gap-20">
